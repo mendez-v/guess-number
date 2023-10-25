@@ -13,21 +13,11 @@
   <main class="main">
     <h1 class="title">adivina el número</h1>
     <p class="para">Solo tienes tres intentos, ¡buena suerte! 🍀</p>
-    <p class="para">Elija un número:</p>
-    <div class="container">
-      <span class="number" onclick="showValue(this)">10</span>
-      <span class="number" onclick="showValue(this)">20</span>
-      <span class="number" onclick="showValue(this)">30</span>
-      <span class="number" onclick="showValue(this)">40</span>
-      <span class="number" onclick="showValue(this)">50</span>
-      <span class="number" onclick="showValue(this)">60</span>
-      <span class="number" onclick="showValue(this)">70</span>
-      <span class="number" onclick="showValue(this)">80</span>
-      <span class="number" onclick="showValue(this)">90</span>
-      <span class="number" onclick="showValue(this)">100</span>
-      <span class="number" onclick="showValue(this)">110</span>
-      <span class="number" onclick="showValue(this)">120</span>
-    </div>
+    <form action="#" id="guessForm">
+      <label for="number" class="label">Ingrese un número entre 1 - 50:</label>
+      <input type="number" name="number" id="number" class="input">
+      <button onclick="play()">play</button>
+    </form>
     <p class="para" id="wrong-number">no es el número</p>
     <p class="para">¡buen intento!, prueba de nuevo</p>
     <p class="para" id="attempt-number">intento 😢</p>
