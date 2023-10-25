@@ -13,9 +13,12 @@
   <main class="main">
     <h1 class="title">adivina el número</h1>
     <p class="para">Solo tienes tres intentos, ¡buena suerte! 🍀</p>
-    <form action="#" id="guessForm">
-      <label for="number" class="label">Ingrese un número entre 1 - 50:</label>
-      <input type="number" name="number" id="number" class="input">
+    <form action="#" id="form-guess">
+      <label class="label">1. Clic aquí 👉</label>
+      <button onclick="getRandomNumber()">random</button>
+      <label for="number-el" class="label">2. Ingrese un número entre 1 - 50:</label>
+      <input type="number" name="number" id="number-el" class="input">
+      <label class="label">3. Juega!! 👉</label>
       <button onclick="play()">play</button>
     </form>
     <p class="para" id="wrong-number">no es el número</p>
