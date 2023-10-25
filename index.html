@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/img/fav.svg">
+  <link rel="apple-touch-icon" href="./assets/img/fav.svg">
+  <title>Adivina el número</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main class="main">
+    <h1 class="title">adivina el número</h1>
+    <p class="para">Solo tienes tres intentos, ¡buena suerte! 🍀</p>
+    <p class="para">Elija un número:</p>
+    <div class="container">
+      <span class="number" onclick="showValue(this)">10</span>
+      <span class="number" onclick="showValue(this)">20</span>
+      <span class="number" onclick="showValue(this)">30</span>
+      <span class="number" onclick="showValue(this)">40</span>
+      <span class="number" onclick="showValue(this)">50</span>
+      <span class="number" onclick="showValue(this)">60</span>
+      <span class="number" onclick="showValue(this)">70</span>
+      <span class="number" onclick="showValue(this)">80</span>
+      <span class="number" onclick="showValue(this)">90</span>
+      <span class="number" onclick="showValue(this)">100</span>
+      <span class="number" onclick="showValue(this)">110</span>
+      <span class="number" onclick="showValue(this)">120</span>
+    </div>
+    <p class="para" id="wrong-number">no es el número</p>
+    <p class="para">¡buen intento!, prueba de nuevo</p>
+    <p class="para" id="attempt-number">intento 😢</p>
+  </main>
+  <footer class="footer">
+    <small class="attr">
+      <a href="https://www.aluracursos.com/" title="Alura Latam" class="attr-link" target="_blank" rel="noreferrer">#inmersiónDev con JavaScript</a> - Desarrollado por <a href="https://github.com/mendez-v/guess-number" class="attr-link" target="_blank" rel="noreferrer">vimp</a>
+    </small>
+  </footer>
+</body>
+</html>
