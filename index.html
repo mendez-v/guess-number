@@ -10,20 +10,20 @@
   <script src="./main.js" defer></script>
 </head>
 <body>
-  <main class="main">
+  <main class="main grid">
     <h1 class="title">adivina el número</h1>
     <p class="para">Solo tienes tres intentos, ¡buena suerte! 🍀</p>
-    <form action="#" id="form-guess">
-      <label class="label">1. Clic aquí 👉</label>
-      <button onclick="getRandomNumber()">random</button>
-      <label for="number-el" class="label">2. Ingrese un número entre 1 - 50:</label>
-      <input type="number" name="number" id="number-el" class="input">
-      <label class="label">3. Juega!! 👉</label>
-      <button onclick="play()">play</button>
+    <form action="#" id="form-guess" class="form-guess grid">
+      <label for="number-el" class="label">Ingrese un número entre 1 - 50:</label>
+      <input type="number" name="number" id="number-el" class="input" autocomplete="off" disabled>
+      <div class="wrapper-btns">
+        <button class="btn" onclick="getRandomNumber()">random</button>
+        <button class="btn" onclick="play()" disabled>play</button>
+      </div>
     </form>
-    <p class="para" id="wrong-number">no es el número</p>
-    <p class="para">¡buen intento!, prueba de nuevo</p>
-    <p class="para" id="attempt-number">intento 😢</p>
+    <p class="para no-visible" id="wrong-number" >no es el número</p>
+    <p class="para no-visible">¡buen intento!, prueba de nuevo</p>
+    <p class="para no-visible" id="attempt-number">intento 😢</p>
   </main>
   <footer class="footer">
     <small class="attr">
